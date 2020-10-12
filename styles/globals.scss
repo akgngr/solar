@@ -1,0 +1,98 @@
+/**
+* Google Fonts
+**/
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@700&display=swap');
+
+$color-primary: #0070f3;
+$color-secondary: #262626;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: $color-secondary;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Mina', sans-serif;
+}
+p, a, span, input, textarea{
+  font-family: 'Varela Round', sans-serif;
+}
+a {
+  color: $color-primary;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/**
+** Global veriable
+ */
+.pt-6{
+  padding-top: 6rem!important;
+}
+.pb-6{
+  padding-bottom: 6rem!important;
+}
+
+
+/**
+* Navbar Style
+**/
+.navbar{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/**
+* Contact section style
+**/
+
+.section{
+  height: 100vh;
+
+  .container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+/**
+** Form Style
+ */
+form.contact {
+    input.input, select.input {
+      width: 100%;
+      height: 67px;
+      padding: 10px 15px 10px 20px;
+      border: 1px solid #F3F5FD;
+      background-color: #F3F5FD;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    textarea {
+      background-color: #F3F5FD;
+      padding: 12px 15px 12px 20px;
+      border: 1px solid #F3F5FD;
+    }
+  }
+
+.swiper-pagination-bullet{
+  background: #fff !important;
+}
+.short-detay .card-img-top {
+  padding-top: 10px;
+}
+.swiper-slide {
+  .card{
+    border: none;
+    align-items: center;
+  }
+}
