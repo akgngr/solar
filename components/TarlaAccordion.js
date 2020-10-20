@@ -3,14 +3,14 @@ import React from "react";
 
 function Tarla(){
     return(
-        <section>
-            <Container>
-                <h1 className="pb-2 text-center">Güneş varsa elektrik faturası yok!</h1>
+        <section id="tarla" className="section">
+            <Container fluid>
+                <h1 className="pb-4 text-center">Güneş varsa elektrik faturası yok!</h1>
                 <Row>
-                    <Col className="d-flex align-items-center justify-content-center">
+                    <Col xs={12} lg={6} className="d-flex align-items-center justify-content-center">
                         <Image src="/images/tarimsal-sulama.jpg" fluid />
                     </Col>
-                    <Col>
+                    <Col xs={12} lg={6}>
                         <Accordion defaultActiveKey="0">
                             <Card>
                                 <Accordion.Toggle as={Card.Header} eventKey="0">
