@@ -34,6 +34,9 @@ function SlideShow () {
                     justify-content: center;
                     align-items: center;
                 }
+                h2{
+                    color: white;
+                }
                 .content {
                     display: flex;
                     flex-direction: column;

@@ -1,29 +1,28 @@
+@import "variables";
 /**
 * Google Fonts
 **/
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Mina:wght@700&display=swap');
 
-$color-primary: #0070f3;
-$color-secondary: #262626;
-
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: $color-secondary;
+  color: $text-default-color;
 }
 
 h1, h2, h3, h4, h5, h6{
   font-family: 'Mina', sans-serif;
+  color: $text-color-second;
 }
 p, a, span, input, textarea{
   font-family: 'Varela Round', sans-serif;
 }
 a {
-  color: $color-primary;
+  color: $text-color-second !important;
   text-decoration: none;
 }
 
@@ -94,5 +93,30 @@ form.contact {
   .card{
     border: none;
     align-items: center;
+  }
+}
+.accordion{
+  .card {
+    border: none;
+    border-radius: 0;
+    background: transparent;
+
+    .card-header{
+      border: none;
+      background: transparent;
+      padding-top: .50rem;
+      padding-bottom: .50rem;
+
+      b{
+        color: $text-color-second;
+      }
+    }
+
+    .card-body{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-right: 1rem;
+      padding-left: 2rem;
+    }
   }
 }

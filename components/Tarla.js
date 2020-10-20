@@ -4,9 +4,9 @@ function Tarla() {
     return(
         <section id="tarla" className="pt-6 pb-5">
             <Container>
+                <h1 className="pb-2 text-center">Güneş varsa elektrik faturası yok!</h1>
                 <Row>
                     <Col lg={6} xs={12}>
-                        <h1 className="pb-2">Güneş varsa elektrik faturası yok!</h1>
                         <Image src="/images/tarimsal-sulama.jpg" fluid />
                         <h2 className="pt-3">Solar Sulama Nedir?</h2>
                         <p>Güneş enerjisinin tarımsal sulamada “kuyudan su çekmek amacı” ile kullanılmasıdır.
