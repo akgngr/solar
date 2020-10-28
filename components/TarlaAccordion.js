@@ -1,5 +1,6 @@
 import  {Button, Accordion, Card, Col, Container, Image, Row} from "react-bootstrap";
 import React from "react";
+import Montaj from './svg/montaj'
 
 function Tarla(){
     return(
@@ -8,7 +9,7 @@ function Tarla(){
                 <h1 className="pb-4 text-center">Güneş varsa elektrik faturası yok!</h1>
                 <Row>
                     <Col xs={12} lg={6} className="d-flex align-items-center justify-content-center">
-                        <Image src="/images/tarimsal-sulama.jpg" fluid />
+                        <Montaj />
                     </Col>
                     <Col xs={12} lg={6}>
                         <Accordion defaultActiveKey="0">
