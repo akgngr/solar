@@ -1,4 +1,6 @@
 @import "variables";
+@import "mixin";
+
 /**
 * Google Fonts
 **/
@@ -79,6 +81,62 @@ form.contact {
     }
   }
 
+/**
+** Slider Style
+ */
+.slides{
+  height: calc(100vh - 114px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint(mobileonly){
+    height: calc(100vh - 74px);
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    width: 70vw;
+    height: 50vh;
+    background-color: #55606585;
+    padding: 30px;
+
+    h2{
+      color: white;
+    }
+  }
+
+}
+
+.slide1{
+  background: url('/images/green-living_t20_RwWnra.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slide2{
+  background: url('/images/solar-cell-panel-for-supply-energy-to-agriculture-farm-or-green-house-plantation-solar-energy-solar_t20_jLPm6k.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slide3{
+  background: url('/images/solar-panels-on-the-roof-of-the-house-alternative-system-house-renewable-panel-tech-green-roof-cell_t20_Ky6zp3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slide4{
+  background: url('/images/tarimsal-sulama.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .swiper-pagination-bullet{
   background: #fff !important;
 }
@@ -119,3 +177,56 @@ form.contact {
     }
   }
 }
+
+.tarla{
+
+  .tarlasulama {
+    background: url('/images/tarimsal-sulama.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+
+    @include breakpoint(desktop){
+      height:calc(100vh - 100px);
+    }
+    .ucgen{
+      padding-left: 20px;
+      padding-right: 20px;
+      @include breakpoint(desktop){
+        position: absolute;
+        right: 0;
+        width: 0;
+        height: 100%;
+        border-right: 80px solid white;
+        border-left: 60px solid transparent;
+        border-top: 570px solid transparent;
+      }
+    }
+  }
+
+  .aciklama{
+    h2{
+      padding-top: 20px;
+    }
+    @include breakpoint(desktop){
+      h2{
+        padding-top: 0;
+      }
+    }
+  }
+}
+.yayla{
+  .yaylaevi{
+    background: url('/images/solar-panels-on-the-roof-of-the-house-alternative-system-house-renewable-panel-tech-green-roof-cell_t20_Ky6zp3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+
+    @include breakpoint(desktop){
+      height:calc(100vh - 100px);
+    }
+  }
+}
+

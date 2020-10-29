@@ -4,11 +4,11 @@ import Montaj from './svg/montaj'
 
 function Tarla(){
     return(
-        <section id="tarla" className="section">
+        <section id="shysolarenergy" className="section">
             <Container fluid>
                 <h1 className="pb-4 text-center">Güneş varsa elektrik faturası yok!</h1>
                 <Row>
-                    <Col xs={12} lg={6} className="d-flex align-items-center justify-content-center">
+                    <Col xs={12} lg={6} className="d-flex align-items-start justify-content-center">
                         <Montaj />
                     </Col>
                     <Col xs={12} lg={6}>

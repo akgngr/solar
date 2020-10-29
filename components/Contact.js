@@ -21,7 +21,7 @@ const ilceler = ilce.map( ( ilce ) =>{
 
 function Contact() {
     return (
-        <section id="ontact" className="pt-6 pb-2">
+        <section id="contact" className="pb-2">
             <Container>
                 <Row>
                     <Col lg={6} md={6} className="pt-5">
@@ -43,7 +43,7 @@ function Contact() {
                     <Col lg={6} md={6}>
                         <Card className="shadow-lg p-3 mb-5 bg-white rounded border-0">
                             <Card.Body>
-                                <Card.Title>Biz Sizi Arayalım</Card.Title>
+                                <Card.Title>Ücretsiz Keşif İçin Biz Sizi Arayalım</Card.Title>
                                 <Form className="contact">
                                     <FormGroup className="pt-2">
                                         <Form.Control type="text" placeholder="Adınız Soyadınız" className="input" />

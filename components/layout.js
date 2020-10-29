@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Header from "./header";
 import Menu from './menu'
-import {Container} from "react-bootstrap";
+import Footer from './Footer'
 
 export default function Layout({
        children,
@@ -22,11 +22,7 @@ export default function Layout({
 
             {children}
 
-            <footer className="pt-5">
-                <Container fluid>
-                    {'I`m here to stay'}
-                </Container>
-            </footer>
+            <Footer />
         </div>
     )
 }
