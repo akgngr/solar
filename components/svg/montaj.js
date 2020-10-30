@@ -5,7 +5,7 @@ function SvgComponent(props) {
     return (
         <svg
             width={575.999}
-            height='85%'
+            height='95%'
             viewBox="0 0 575.999 675.999"
             {...props}
         >

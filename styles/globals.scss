@@ -91,8 +91,9 @@ form.contact {
   align-items: center;
 
   @include breakpoint(mobileonly){
-    height: calc(100vh - 74px);
+    height: calc(60vh - 74px);
   }
+  
   .content {
     display: flex;
     flex-direction: column;
@@ -228,5 +229,38 @@ form.contact {
       height:calc(100vh - 100px);
     }
   }
+
+  .aciklama{
+    h2{
+      padding-top: 20px;
+    }
+    @include breakpoint(desktop){
+      h2{
+        padding-top: 0;
+      }
+    }
+  }
+  
 }
 
+/**
+** Footer Style
+*/
+
+footer{
+
+  .list-group-item{
+    padding-left: .5rem;
+  }
+
+  @include breakpoint(mobileonly){
+    .foot-p{
+      padding-bottom: 50px;
+    }
+  }
+  @include breakpoint(phablet){
+    .foot-p{
+      padding-bottom: 50px;
+    }
+  }
+}

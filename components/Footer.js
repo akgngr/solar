@@ -4,15 +4,16 @@ import Instagram from "./svg/instagram";
 const Footer = () => {
     return(
         <footer className="pt-5">
+            <hr className='pt-3' />
             <Container fluid>
                 <Row>
-                    <Col>
+                    <Col lg={3} md={12} sm={12} xs={12} className='foot-p'>
                         <img src="../images/logo.png" alt="logo" />
-                        <p className='pt-3'>
+                        <p className='pt-3 text-muted'>
                             Derviş Solar Sistemleri, Hatay’ın Hassa İlçesine Bağlı Aktepe Mahallesinde kurulmuştur. Güneş ışığını elektrik enerjisine dönüştüren yüksek performanslı solar sistemler kurmaktadır.
                         </p>
                     </Col>
-                    <Col>
+                    <Col lg={3} md={4} sm={12} xs={12} className='foot-p'>
                         <h3>Menü</h3>
                         <ListGroup variant="flush">
                             <ListGroup.Item><a href="#">Anasayfa</a></ListGroup.Item>
@@ -22,7 +23,7 @@ const Footer = () => {
                             <ListGroup.Item><a href="#">İletişim</a></ListGroup.Item>
                         </ListGroup>
                     </Col>
-                    <Col>
+                    <Col lg={3} md={4} sm={12} xs={12} className='foot-p'>
                         <h3>Çözümlerimiz</h3>
                         <ListGroup variant="flush">
                             <ListGroup.Item><a href="#">Tarla Sulama</a></ListGroup.Item>
@@ -32,7 +33,7 @@ const Footer = () => {
                             <ListGroup.Item><a href="#">Fabrika</a></ListGroup.Item>
                         </ListGroup>
                     </Col>
-                    <Col>
+                    <Col lg={3} md={4} sm={12} xs={12} className='foot-p'>
                         <h3 className='pb-4'>Bizi Takip Edin</h3>
                         <p><a href="https://instagram.com/dervissolar"><Instagram /> @dervissolar</a></p>
                         <p><a href="https://instagram.com/dervissolar"><Instagram /> @dervissolar</a></p>

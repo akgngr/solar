@@ -12,8 +12,8 @@ export default function Layout({
         <div>
             <Head>
                 <title>{title}</title>
-                <meta charSet="utf-8" />
-                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta charset="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=0" />
             </Head>
             <header>
                 <Header/>
