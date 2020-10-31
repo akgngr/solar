@@ -31,7 +31,9 @@ a {
 * {
   box-sizing: border-box;
 }
-
+p {
+  line-height: 2rem;
+}
 /**
 ** Global veriable
  */
@@ -85,11 +87,11 @@ form.contact {
 ** Slider Style
  */
 .slides{
-  height: calc(100vh - 114px);
+  height: calc(100vh - 74px);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-
+  width: 100% !important;
   @include breakpoint(mobileonly){
     height: calc(60vh - 74px);
   }
@@ -98,46 +100,72 @@ form.contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    text-align: center;
-    width: 70vw;
-    height: 50vh;
-    background-color: #55606585;
-    padding: 30px;
+    align-items: flex-start;
+    text-align: left;
+    height: 35vh;
+    font-size: 1.8rem;
+    background-color:#ffed048a;
+    width: 80%;
+    padding:20px 40px;
+    margin-left: 40px;
+
+    @include breakpoint(desktop) {
+      width: 40%;
+      background-color:#ffed04;
+      height: 40vh;
+    }
 
     h2{
-      color: white;
+      color: rgb(0, 0, 0);
+      width: 100%;
+
+      @include breakpoint(desktop) {
+        width: auto;
+      }
+    }
+
+    span{
+      width: 70%;
+      border-bottom: 3px solid orangered;
+    }
+    small{
+      font-size: 55%;
+      padding-top: 15px;
     }
   }
 
 }
 
 .slide1{
-  background: url('/images/green-living_t20_RwWnra.jpg');
+  background: url('/images/slider1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .slide2{
-  background: url('/images/solar-cell-panel-for-supply-energy-to-agriculture-farm-or-green-house-plantation-solar-energy-solar_t20_jLPm6k.jpg');
+  background: url('/images/slider2.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .slide3{
-  background: url('/images/solar-panels-on-the-roof-of-the-house-alternative-system-house-renewable-panel-tech-green-roof-cell_t20_Ky6zp3.jpg');
+  background: url('/images/slider3.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .slide4{
-  background: url('/images/tarimsal-sulama.jpg');
+  background: url('/images/slider4.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
+.slide5{
+  background: url('/images/slider5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .swiper-pagination-bullet{
   background: #fff !important;
 }
@@ -210,6 +238,7 @@ form.contact {
     h2{
       padding-top: 20px;
     }
+
     @include breakpoint(desktop){
       h2{
         padding-top: 0;
@@ -240,7 +269,7 @@ form.contact {
       }
     }
   }
-  
+
 }
 
 /**
@@ -261,6 +290,27 @@ footer{
   @include breakpoint(phablet){
     .foot-p{
       padding-bottom: 50px;
+    }
+  }
+
+  .baglanti{
+
+    svg{
+      fill: #484848;
+      width: 40px;
+    }
+
+    .whatsapp svg:hover{
+      fill: #3fe675;
+    }
+    .instagram svg:hover{
+      fill: white;
+      background: #d6249f;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+      box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    }
+    .facebook svg:hover{
+      fill:#138bf1;
     }
   }
 }

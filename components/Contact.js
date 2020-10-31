@@ -21,7 +21,7 @@ const ilceler = ilce.map( ( ilce ) =>{
 
 function Contact() {
     return (
-        <section id="contact" className="pb-2">
+        <section id="contact" className="pb-2 pt-6">
             <Container>
                 <Row>
                     <Col lg={6} md={6} className="pt-5">
@@ -29,7 +29,7 @@ function Contact() {
                         <p>Bizimle Iletişime Geçmekten Çekinmeyin.</p>
                         <p className="pt-4">
                             <Mapstik />
-                            <span className="pl-2"> Aktepe Mahallesi, Atatürk Cad. No: 4 31710 Hassa/Hatay </span>
+                            <span className="pl-2"><a href="https://g.page/dervissolar?share">Aktepe Mahallesi, Atatürk Cad. No: 4 31710 Hassa/Hatay</a></span>
                         </p>
                         <p className="pt-4">
                             <Phoneempty />
@@ -67,15 +67,15 @@ function Contact() {
                                     <Row className="pt-2">
                                         <Col>
                                             <Form.Group className="pt-2">
-                                                <Form.Control as="select" className="input" id='il'>
-                                                    <option>İl Seçiniz</option>
+                                                <Form.Control key={ iller } as="select" className="input" id='il'>
+                                                    <option >İl Seçiniz</option>
                                                     { iller }
                                                 </Form.Control>
                                             </Form.Group>
                                         </Col>
                                         <Col>
                                             <Form.Group className="pt-2">
-                                                <Form.Control as="select" className="input">
+                                                <Form.Control key={ ilceler }  as="select" className="input">
                                                     <option>İlçe Seçiniz</option>
                                                     { ilceler }
                                                 </Form.Control>

@@ -1,5 +1,8 @@
 import {ListGroup, Container, Row, Col} from "react-bootstrap";
 import Instagram from "./svg/instagram";
+import Facebook from './svg/facebook';
+import Whatsapp from './svg/Whatsapp';
+
 
 const Footer = () => {
     return(
@@ -14,7 +17,7 @@ const Footer = () => {
                         </p>
                     </Col>
                     <Col lg={3} md={4} sm={12} xs={12} className='foot-p'>
-                        <h3>Menü</h3>
+                        <h4>Menü</h4>
                         <ListGroup variant="flush">
                             <ListGroup.Item><a href="#">Anasayfa</a></ListGroup.Item>
                             <ListGroup.Item><a href="#">Hakkımızda</a></ListGroup.Item>
@@ -24,7 +27,7 @@ const Footer = () => {
                         </ListGroup>
                     </Col>
                     <Col lg={3} md={4} sm={12} xs={12} className='foot-p'>
-                        <h3>Çözümlerimiz</h3>
+                        <h4>Çözümlerimiz</h4>
                         <ListGroup variant="flush">
                             <ListGroup.Item><a href="#">Tarla Sulama</a></ListGroup.Item>
                             <ListGroup.Item><a href="#">Yayla Evi</a></ListGroup.Item>
@@ -34,10 +37,12 @@ const Footer = () => {
                         </ListGroup>
                     </Col>
                     <Col lg={3} md={4} sm={12} xs={12} className='foot-p'>
-                        <h3 className='pb-4'>Bizi Takip Edin</h3>
-                        <p><a href="https://instagram.com/dervissolar"><Instagram /> @dervissolar</a></p>
-                        <p><a href="https://instagram.com/dervissolar"><Instagram /> @dervissolar</a></p>
-                        <p><a href="https://instagram.com/dervissolar"><Instagram /> @dervissolar</a></p>
+                        <h4 className='pb-4'>Bizi Takip Edin</h4>
+                        <ul className="list-inline baglanti">
+                            <li className="list-inline-item instagram"><a href="https://instagram.com/dervissolar"><Instagram /></a></li>
+                            <li className="list-inline-item facebook"><a href="https://instagram.com/dervissolar"><Facebook /></a></li>
+                            <li className="list-inline-item whatsapp"><a href="https://instagram.com/dervissolar"><Whatsapp /></a></li>
+                        </ul>
                     </Col>
                 </Row>
             </Container>

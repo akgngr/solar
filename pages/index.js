@@ -11,11 +11,11 @@ export default function Home() {
   return (
     <Layout>
       <Slideshow />
-      <ShortDetay />
-      <Tarla />
-      <WhySolarEnergy />
-      <YaylaEvi />
       <Contact />
+      <Tarla />
+      <ShortDetay />
+      <YaylaEvi />
+      <WhySolarEnergy />
     </Layout>
   )
 }

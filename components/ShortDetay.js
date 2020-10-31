@@ -18,7 +18,7 @@ import Panel from "./svg/Panel";
 
 function ShortDetay () {
     return (
-        <section id="short-detay" className="short-detay pt-6 text-center">
+        <section id="short-detay" className="short-detay pt-6 pb-6 text-center">
             <Container fluid>
                 <Swiper
                     spaceBetween={50}

@@ -21,10 +21,51 @@ function SlideShow () {
                     disableOnInteraction: false
                 }}
             >
-                <SwiperSlide> <div className="slides slide1"> <div className="content"> <h2>Derviş Solar</h2><p>Lorem ipsum dolar sit amed.</p> </div> </div> </SwiperSlide>
-                <SwiperSlide> <div className="slides slide2"> <div className="content"> <h2>Derviş Solar</h2><p>Lorem ipsum dolar sit amed.</p> </div> </div> </SwiperSlide>
-                <SwiperSlide> <div className="slides slide3"> <div className="content"> <h2>Derviş Solar</h2><p>Lorem ipsum dolar sit amed.</p> </div> </div> </SwiperSlide>
-                <SwiperSlide> <div className="slides slide4"> <div className="content"> <h2>Derviş Solar</h2><p>Lorem ipsum dolar sit amed.</p> </div> </div> </SwiperSlide>
+                <SwiperSlide> <div className="slides slide1">
+                    <div className="content">
+                        <h2 className='text-uppercase font-weight-bolder display-5'>Derviş Solar</h2>
+                        <p className='font-weight-lighter text-muted'>Lorem ipsum dolar sit amed.</p>
+                        <span />
+                        <small className="text-muted font-weight-lighter">www.dervissolar.com - info@dervissolar.com</small>
+                    </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide> <div className="slides slide2">
+                    <div className="content">
+                        <h2 className='text-uppercase font-weight-bolder display-5'>Derviş Solar</h2>
+                        <p className='font-weight-lighter text-muted'>Lorem ipsum dolar sit amed.</p>
+                        <span />
+                        <small className="text-muted font-weight-lighter">www.dervissolar.com - info@dervissolar.com</small>
+                    </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide> <div className="slides slide3">
+                    <div className="content">
+                        <h2 className='text-uppercase font-weight-bolder display-5'>Derviş Solar</h2>
+                        <p className='font-weight-lighter text-muted'>Lorem ipsum dolar sit amed.</p>
+                        <span />
+                        <small className="text-muted font-weight-lighter">www.dervissolar.com - info@dervissolar.com</small>
+                    </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide> <div className="slides slide4">
+                    <div className="content">
+                        <h2 className='text-uppercase font-weight-bolder display-5'>Derviş Solar</h2>
+                        <p className='font-weight-lighter text-muted'>Lorem ipsum dolar sit amed.</p>
+                        <span />
+                        <small className="text-muted font-weight-lighter">www.dervissolar.com - info@dervissolar.com</small>
+                    </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide> <div className="slides slide5">
+                    <div className="content">
+                        <h2 className='text-uppercase font-weight-bolder display-5'>Derviş Solar</h2>
+                        <p className='font-weight-lighter text-muted'>Lorem ipsum dolar sit amed.</p>
+                        <span />
+                        <small className="text-muted font-weight-lighter">www.dervissolar.com - info@dervissolar.com</small>
+                    </div>
+                    </div>
+                </SwiperSlide>
             </Swiper>
         </section>
     );

@@ -10,14 +10,14 @@ export default function menu() {
                     <Nav.Link href="/">Anasayfa</Nav.Link>
                     <Nav.Link href="/hakkimizda">Hakkımızda</Nav.Link>
                     <NavDropdown title="Sistemler" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#">Tarla Sulaması</NavDropdown.Item>
-                        <NavDropdown.Item href="#">Yayla ve Bağ Evi</NavDropdown.Item>
-                        <NavDropdown.Item href="#">Çiftlik</NavDropdown.Item>
-                        <NavDropdown.Item href="#">Fabrika</NavDropdown.Item>
+                        <NavDropdown.Item href="/tarla-sulama">Tarla Sulaması</NavDropdown.Item>
+                        <NavDropdown.Item href="/yayla-ve-bag-evi">Yayla ve Bağ Evi</NavDropdown.Item>
+                        <NavDropdown.Item href="/ciftlik">Çiftlik</NavDropdown.Item>
+                        <NavDropdown.Item href="/fabrika">Fabrika</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="/hakkimizda">Öz Tüketim</Nav.Link>
-                    <Nav.Link href="/hakkimizda">Referanslar</Nav.Link>
-                    <Nav.Link href="/hakkimizda">İletişim</Nav.Link>
+                    <Nav.Link href="/oztuketim">Öz Tüketim</Nav.Link>
+                    <Nav.Link href="/referanslar">Referanslar</Nav.Link>
+                    <Nav.Link href="/iletisim">İletişim</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
