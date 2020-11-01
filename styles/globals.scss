@@ -70,11 +70,20 @@ p {
 /**
 * Contact section style
 **/
+#contact {
 
-.section{
-  padding-top: 100px;
-  padding-bottom: 100px;
+  @include breakpoint(desktop){
+    padding-top: 100px;
+  }
+  .card{
+    @include breakpoint(mobileonly){
+      margin-top: 40px !important;
+    }
+  }
+
+
 }
+
 
 /**
 ** Form Style
@@ -107,7 +116,7 @@ form.contact {
   align-items: center;
   width: 100% !important;
   @include breakpoint(mobileonly){
-    height: calc(60vh - 74px);
+    height: calc(100vh - 74px);
   }
   
   .content {
@@ -116,44 +125,55 @@ form.contact {
     justify-content: center;
     align-items: flex-start;
     text-align: left;
-    height: 35vh;
+    height: auto;
     background-color:#ffed048a;
-    width: 80%;
-    padding:20px 40px;
-    margin-left: 40px;
-
+    width: 100%;
+    padding:40px 30px;
+    margin-left: 10px;
+    margin-right: 10px;
 
     @include breakpoint(desktop) {
       width: 40%;
       background-color:#ffed04;
-      height: 40vh;
+      height: auto;
+      margin-left: 40px;
     }
 
     h2{
       color: rgb(0, 0, 0);
       width: 100%;
       font-family: Publica;
-      font-size: 3.2rem;
+      font-size: 2.2rem;
       font-weight: 400 !important;
       text-shadow: 1px 1px 0 #464646;
       @include breakpoint(desktop) {
         width: auto;
+        font-size: 3.2rem;
       }
     }
 
     span{
-      width: 70%;
-      border-bottom: 3px solid orangered;
+      width: 100%;
+      border-bottom: 3px solid rgb(240, 44, 0);
+      @include breakpoint(desktop) {
+        width: 70%;
+      }
     }
     small{
-      font-size: 55%;
+      font-size: .8rem;
       font-family: Publica-light;
       font-size: 1rem;
       padding-top: 15px;
+      @include breakpoint(desktop) {
+        font-size: 55%;
+      }
     }
     p{
       font-family: Publica-light;
-      font-size: 1.6rem;
+      font-size: 1.2rem;
+      @include breakpoint(desktop) {
+        font-size: 1.6rem;
+      }
     }
   }
 
@@ -258,11 +278,15 @@ form.contact {
   }
 
   .aciklama{
+
     h2{
       padding-top: 20px;
     }
 
     @include breakpoint(desktop){
+
+      padding-left: 40px;
+
       h2{
         padding-top: 0;
       }
@@ -287,6 +311,7 @@ form.contact {
       padding-top: 20px;
     }
     @include breakpoint(desktop){
+      padding-left: 40px;
       h2{
         padding-top: 0;
       }
@@ -335,5 +360,17 @@ footer{
     .facebook svg:hover{
       fill:#138bf1;
     }
+  }
+}
+
+/**
+** Why Solar Energy Style
+*/
+
+.whysolarenergy{
+  padding-top: 0;
+
+  @include breakpoint(desktop){
+    padding-top: 80px;
   }
 }

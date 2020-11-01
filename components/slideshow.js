@@ -23,7 +23,7 @@ function SlideShow () {
             >
                 <SwiperSlide> <div className="slides slide1">
                     <div className="content">
-                        <h2 className='text-uppercase font-weight-bolder display-5'>Derviş Solar</h2>
+                        <h2 className='text-uppercase'>Derviş Solar</h2>
                         <p className='font-weight-lighter text-muted'>Lorem ipsum dolar sit amed.</p>
                         <span />
                         <small className="text-muted font-weight-lighter">www.dervissolar.com - info@dervissolar.com</small>
@@ -32,7 +32,7 @@ function SlideShow () {
                 </SwiperSlide>
                 <SwiperSlide> <div className="slides slide2">
                     <div className="content">
-                        <h2 className='text-uppercase font-weight-bolder display-5'>Derviş Solar</h2>
+                        <h2 className='text-uppercase'>Derviş Solar</h2>
                         <p className='font-weight-lighter text-muted'>Lorem ipsum dolar sit amed.</p>
                         <span />
                         <small className="text-muted font-weight-lighter">www.dervissolar.com - info@dervissolar.com</small>
@@ -41,7 +41,7 @@ function SlideShow () {
                 </SwiperSlide>
                 <SwiperSlide> <div className="slides slide3">
                     <div className="content">
-                        <h2 className='text-uppercase font-weight-bolder display-5'>Derviş Solar</h2>
+                        <h2 className='text-uppercase'>Derviş Solar</h2>
                         <p className='font-weight-lighter text-muted'>Lorem ipsum dolar sit amed.</p>
                         <span />
                         <small className="text-muted font-weight-lighter">www.dervissolar.com - info@dervissolar.com</small>
@@ -50,7 +50,7 @@ function SlideShow () {
                 </SwiperSlide>
                 <SwiperSlide> <div className="slides slide4">
                     <div className="content">
-                        <h2 className='text-uppercase font-weight-bolder display-5'>Derviş Solar</h2>
+                        <h2 className='text-uppercase'>Derviş Solar</h2>
                         <p className='font-weight-lighter text-muted'>Lorem ipsum dolar sit amed.</p>
                         <span />
                         <small className="text-muted font-weight-lighter">www.dervissolar.com - info@dervissolar.com</small>
@@ -59,7 +59,7 @@ function SlideShow () {
                 </SwiperSlide>
                 <SwiperSlide> <div className="slides slide5">
                     <div className="content">
-                        <h2 className='text-uppercase font-weight-bolder display-5'>Derviş Solar</h2>
+                        <h2 className='text-uppercase'>Derviş Solar</h2>
                         <p className='font-weight-lighter text-muted'>Lorem ipsum dolar sit amed.</p>
                         <span />
                         <small className="text-muted font-weight-lighter">www.dervissolar.com - info@dervissolar.com</small>

@@ -21,7 +21,7 @@ const ilceler = ilce.map( ( ilce ) =>{
 
 function Contact() {
     return (
-        <section id="contact" className="pb-2 pt-6">
+        <section id="contact" className="pb-2">
             <Container>
                 <Row>
                     <Col lg={6} md={6} className="pt-5">

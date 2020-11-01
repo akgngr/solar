@@ -4,7 +4,7 @@ import Montaj from './svg/montaj'
 
 function Tarla(){
     return(
-        <section id="shysolarenergy" className="pt-6">
+        <section id="whysolarenergy" className="whysolarenergy">
             <Container fluid>
                 <h1 className="pb-4 text-center">Güneş varsa elektrik faturası yok!</h1>
                 <Row>
