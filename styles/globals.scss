@@ -7,6 +7,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Mina:wght@700&display=swap');
 
+/**
+** include other fonts
+*/
+@font-face {
+  font-family: Publica;
+  src: url("fonts/PublicaSlab-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Publica-light;
+  src: url("fonts/PublicaSlab-Thin.otf") format("opentype");
+}
+
+
 html,
 body {
   padding: 0;
@@ -103,11 +117,11 @@ form.contact {
     align-items: flex-start;
     text-align: left;
     height: 35vh;
-    font-size: 1.8rem;
     background-color:#ffed048a;
     width: 80%;
     padding:20px 40px;
     margin-left: 40px;
+
 
     @include breakpoint(desktop) {
       width: 40%;
@@ -118,7 +132,10 @@ form.contact {
     h2{
       color: rgb(0, 0, 0);
       width: 100%;
-
+      font-family: Publica;
+      font-size: 3.2rem;
+      font-weight: 400 !important;
+      text-shadow: 1px 1px 0 #464646;
       @include breakpoint(desktop) {
         width: auto;
       }
@@ -130,7 +147,13 @@ form.contact {
     }
     small{
       font-size: 55%;
+      font-family: Publica-light;
+      font-size: 1rem;
       padding-top: 15px;
+    }
+    p{
+      font-family: Publica-light;
+      font-size: 1.6rem;
     }
   }
 
