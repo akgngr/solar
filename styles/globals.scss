@@ -74,6 +74,9 @@ p {
 
   @include breakpoint(desktop){
     padding-top: 100px;
+    .bilgiler{
+      padding-left: 40px;
+    }
   }
   .card{
     @include breakpoint(mobileonly){
@@ -126,7 +129,7 @@ form.contact {
     align-items: flex-start;
     text-align: left;
     height: auto;
-    background-color:#ffed048a;
+    background-color:#ececec93;
     width: 100%;
     padding:40px 30px;
     margin-left: 10px;
@@ -134,13 +137,13 @@ form.contact {
 
     @include breakpoint(desktop) {
       width: 40%;
-      background-color:#ffed04;
+      background-color:#ececec93;
       height: auto;
       margin-left: 40px;
     }
 
     h2{
-      color: rgb(0, 0, 0);
+      color: rgb(240, 128, 0);
       width: 100%;
       font-family: Publica;
       font-size: 2.2rem;
@@ -154,7 +157,7 @@ form.contact {
 
     span{
       width: 100%;
-      border-bottom: 3px solid rgb(240, 44, 0);
+      border-bottom: 3px solid rgb(240, 128, 0);
       @include breakpoint(desktop) {
         width: 70%;
       }
@@ -165,12 +168,13 @@ form.contact {
       font-size: 1rem;
       padding-top: 15px;
       @include breakpoint(desktop) {
-        font-size: 55%;
+        font-size: 1rem;
       }
     }
     p{
       font-family: Publica-light;
       font-size: 1.2rem;
+      text-shadow: 1px 1px 0 #464646;
       @include breakpoint(desktop) {
         font-size: 1.6rem;
       }

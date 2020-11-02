@@ -1,12 +1,12 @@
 import {Card, Container} from "react-bootstrap";
 
-import SwiperCore, { Pagination, A11y, Navigation, Autoplay } from 'swiper';
+import SwiperCore, { Pagination, A11y, Autoplay } from 'swiper';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // install Swiper components
-SwiperCore.use([Navigation, Pagination, A11y, Autoplay]);
+SwiperCore.use([Pagination, A11y, Autoplay]);
 
 //Svg icons
 import Parmak from "./svg/parmak";
@@ -21,9 +21,9 @@ function ShortDetay () {
         <section id="short-detay" className="short-detay pt-6 pb-6 text-center">
             <Container fluid>
                 <Swiper
-                    spaceBetween={50}
+                    spaceBetween={40}
                     slidesPerView={4}
-                    navigation
+                    pagination={{ clickable: true }}
                     zoom={ true }
                     autoplay={{
                         delay: 2500,
@@ -46,7 +46,6 @@ function ShortDetay () {
                             spaceBetween: 40
                         }
                     }}
-                    pagination={{ clickable: true }}
                 >
                     <SwiperSlide>
                         <Card>

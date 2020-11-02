@@ -2,6 +2,7 @@ import {Button, Card, Col, Container, Form, FormGroup, Row} from "react-bootstra
 import Mapstik from "./svg/mapstik";
 import Phoneempty from "./svg/phoneempty";
 import Tel from "./svg/tel";
+import Email from './svg/email'
 
 //json data import
 import il from '../json/il.json'
@@ -24,22 +25,6 @@ function Contact() {
         <section id="contact" className="pb-2">
             <Container>
                 <Row>
-                    <Col lg={6} md={6} className="pt-5">
-                        <h2>Keşif İçin Bizimle İletişime Geçin</h2>
-                        <p>Bizimle Iletişime Geçmekten Çekinmeyin.</p>
-                        <p className="pt-4">
-                            <Mapstik />
-                            <span className="pl-2"><a href="https://g.page/dervissolar?share">Aktepe Mahallesi, Atatürk Cad. No: 4 31710 Hassa/Hatay</a></span>
-                        </p>
-                        <p className="pt-4">
-                            <Phoneempty />
-                            <span className="pl-2"><a href="tel:+905379271214">+905379271214</a></span>
-                        </p>
-                        <p className="pt-4">
-                            <Tel/>
-                            <span className="pl-2"> <a href="tel:+903267835484">+903267835484</a> </span>
-                        </p>
-                    </Col>
                     <Col lg={6} md={6}>
                         <Card className="shadow-lg p-3 mb-5 bg-white rounded border-0">
                             <Card.Body>
@@ -95,6 +80,26 @@ function Contact() {
                                 </Form>
                             </Card.Body>
                         </Card>
+                    </Col>
+                    <Col lg={6} md={6} className="bilgiler">
+                        <h2>Keşif İçin Bizimle İletişime Geçin</h2>
+                        <p>Bizimle Iletişime Geçmekten Çekinmeyin.</p>
+                        <p className="pt-4">
+                            <Phoneempty />
+                            <span className="pl-2"><a href="tel:+905379271214">+905379271214</a></span>
+                        </p>
+                        <p className="pt-4">
+                            <Tel/>
+                            <span className="pl-2"> <a href="tel:+903267835484">+903267835484</a> </span>
+                        </p>
+                        <p className="pt-4">
+                            <Email />
+                            <span className="pl-2"> <a href="mailto:info@dervissolar.com">info@dervissolar.com</a> </span>
+                        </p>
+                        <p className="pt-4">
+                            <Mapstik />
+                            <span className="pl-2"><a href="https://g.page/dervissolar?share">Aktepe Mahallesi, Atatürk Cad. No: 4 31710 Hassa/Hatay</a></span>
+                        </p>
                     </Col>
                 </Row>
             </Container>
