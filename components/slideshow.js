@@ -7,9 +7,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 SwiperCore.use([Pagination, A11y]);
 
 
-function SlideShow () {
+function SlideShow (props) {
+
     return (
-        <section>
+        <section className='slides'>
             <Swiper
                 spaceBetween={50}
                 slidesPerView={1}
@@ -19,49 +20,24 @@ function SlideShow () {
                     disableOnInteraction: false
                 }}
             >
-                <SwiperSlide> <div className="slides slide1">
-                    <div className="content">
-                        <h2 className='text-uppercase'>Derviş Solar</h2>
-                        <p className='font-weight-lighter text-muted'>Lorem ipsum dolar sit amed.</p>
-                        <span />
-                        <small className="text-muted font-weight-lighter">www.dervissolar.com - info@dervissolar.com</small>
-                    </div>
+                <SwiperSlide>
+                    <div className="slides slide1">
                     </div>
                 </SwiperSlide>
-                <SwiperSlide> <div className="slides slide2">
-                    <div className="content">
-                        <h2 className='text-uppercase'>Derviş Solar</h2>
-                        <p className='font-weight-lighter text-muted'>Lorem ipsum dolar sit amed.</p>
-                        <span />
-                        <small className="text-muted font-weight-lighter">www.dervissolar.com - info@dervissolar.com</small>
-                    </div>
+                <SwiperSlide>
+                    <div className="slides slide2">
                     </div>
                 </SwiperSlide>
-                <SwiperSlide> <div className="slides slide3">
-                    <div className="content">
-                        <h2 className='text-uppercase'>Derviş Solar</h2>
-                        <p className='font-weight-lighter text-muted'>Lorem ipsum dolar sit amed.</p>
-                        <span />
-                        <small className="text-muted font-weight-lighter">www.dervissolar.com - info@dervissolar.com</small>
-                    </div>
+                <SwiperSlide>
+                    <div className="slides slide3">
                     </div>
                 </SwiperSlide>
-                <SwiperSlide> <div className="slides slide4">
-                    <div className="content">
-                        <h2 className='text-uppercase'>Derviş Solar</h2>
-                        <p className='font-weight-lighter text-muted'>Lorem ipsum dolar sit amed.</p>
-                        <span />
-                        <small className="text-muted font-weight-lighter">www.dervissolar.com - info@dervissolar.com</small>
-                    </div>
+                <SwiperSlide>
+                    <div className="slides slide4">
                     </div>
                 </SwiperSlide>
-                <SwiperSlide> <div className="slides slide5">
-                    <div className="content">
-                        <h2 className='text-uppercase'>Derviş Solar</h2>
-                        <p className='font-weight-lighter text-muted'>Lorem ipsum dolar sit amed.</p>
-                        <span />
-                        <small className="text-muted font-weight-lighter">www.dervissolar.com - info@dervissolar.com</small>
-                    </div>
+                <SwiperSlide>
+                    <div className="slides slide5">
                     </div>
                 </SwiperSlide>
             </Swiper>

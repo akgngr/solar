@@ -83,6 +83,9 @@ p {
       margin-top: 40px !important;
     }
   }
+  @include breakpoint(phablet){
+    margin-top: 100px;
+  }
 
 
 }
@@ -122,6 +125,15 @@ form.contact {
     height: calc(100vh - 74px);
   }
   
+  .swiper-container{
+    height: 100%;
+    width: 100%;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
   .content {
     display: flex;
     flex-direction: column;
@@ -174,7 +186,7 @@ form.contact {
     p{
       font-family: Publica-light;
       font-size: 1.2rem;
-      text-shadow: 1px 1px 0 #464646;
+      //text-shadow: 1px 1px 0 #464646;
       @include breakpoint(desktop) {
         font-size: 1.6rem;
       }
@@ -184,35 +196,72 @@ form.contact {
 }
 
 .slide1{
-  background: url('/images/slider1.png');
+  background: url('/images/slider_1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .slide2{
-  background: url('/images/slider2.png');
+  background: url('/images/slider_2.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .slide3{
-  background: url('/images/slider3.png');
+  background: url('/images/slider_3.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .slide4{
-  background: url('/images/slider4.png');
+  background: url('/images/slider_4.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .slide5{
-  background: url('/images/slider5.png');
+  background: url('/images/slider_5.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@include breakpoint(mobileonly){
+  .slide1{
+    background-image: url('/images/mobil/mobil_slider1.png');
+  }
+  .slide2{
+    background-image: url('/images/mobil/mobil_slider2.png');
+  }
+  .slide3{
+    background-image: url('/images/mobil/mobil_slider3.png');
+  }
+  .slide4{
+    background-image: url('/images/mobil/mobil_slider4.png');
+  }
+  .slide5{
+    background-image: url('/images/mobil/mobil_slider5.png');
+  }
+}
+
+@include breakpoint(phablet){
+  .slide1{
+    background-image: url('/images/mobil/mobil_slider1.png');
+  }
+  .slide2{
+    background-image: url('/images/mobil/mobil_slider2.png');
+  }
+  .slide3{
+    background-image: url('/images/mobil/mobil_slider3.png');
+  }
+  .slide4{
+    background-image: url('/images/mobil/mobil_slider4.png');
+  }
+  .slide5{
+    background-image: url('/images/mobil/mobil_slider5.png');
+  }
+}
+
 .swiper-pagination-bullet{
   background: #fff !important;
 }
