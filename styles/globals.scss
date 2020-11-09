@@ -229,18 +229,23 @@ form.contact {
 @include breakpoint(mobileonly){
   .slide1{
     background-image: url('/images/mobil/mobil_slider1.png');
+    background-size: 100% 100%;
   }
   .slide2{
     background-image: url('/images/mobil/mobil_slider2.png');
+    background-size: 100% 100%;
   }
   .slide3{
     background-image: url('/images/mobil/mobil_slider3.png');
+    background-size: 100% 100%;
   }
   .slide4{
     background-image: url('/images/mobil/mobil_slider4.png');
+    background-size: 100% 100%;
   }
   .slide5{
     background-image: url('/images/mobil/mobil_slider5.png');
+    background-size: 100% 100%;
   }
 }
 
