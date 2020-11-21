@@ -1,9 +1,11 @@
 import Layout from '../components/layout'
 import {Col, Container, Row} from "react-bootstrap";
+import Head from '../components/head'
 
 export default function Hakkimizda(){
     return(
         <Layout>
+            <Head />
             <Container className="pt-5 pb-5">
                 <Row>
                     <Col lg={8} className="offset-lg-2">

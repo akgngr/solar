@@ -1,11 +1,13 @@
 import { Container } from "react-bootstrap"
 import Contact from "../components/Contact"
 import Layout from "../components/layout"
+import Head from '../components/head'
 
 const iletisim = () => {
     return(
         <Layout>
-            <Container className="pt-6 pb-6">
+            <Head />
+            <Container>
                 <Contact />
             </Container>
         </Layout>

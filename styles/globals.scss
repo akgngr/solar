@@ -73,7 +73,7 @@ p {
 #contact {
 
   @include breakpoint(desktop){
-    padding-top: 100px;
+    //padding-top: 100px;
     .bilgiler{
       padding-left: 40px;
     }
@@ -412,5 +412,22 @@ footer{
 
   @include breakpoint(desktop){
     padding-top: 80px;
+  }
+}
+
+.page-head {
+  width: 100vw;
+  height: 350px;
+  background-image: url('/images/slider5.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.iletisimegec{
+  height: 180px;
+  background-color: #ff8f04;
+
+  h2{
+    color: #fff;
   }
 }

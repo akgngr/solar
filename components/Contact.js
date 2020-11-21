@@ -4,22 +4,6 @@ import Phoneempty from "./svg/phoneempty";
 import Tel from "./svg/tel";
 import Email from './svg/email'
 
-//json data import
-import il from '../json/il.json'
-import ilce from '../json/ilce.json'
-
-const iller = il.map( ( il ) => {
-    return (
-        <option value={ il.id }>{ il.name }</option>
-    )
-})
-
-const ilceler = ilce.map( ( ilce ) =>{
-    return (
-        <option value={ ilce.id }>{ ilce.name }</option>
-    )
-})
-
 function Contact() {
     return (
         <section id="contact" className="pb-2">
@@ -52,18 +36,12 @@ function Contact() {
                                     <Row className="pt-2">
                                         <Col>
                                             <Form.Group className="pt-2">
-                                                <Form.Control key={ iller } as="select" className="input" id='il'>
-                                                    <option >İl Seçiniz</option>
-                                                    { iller }
-                                                </Form.Control>
+                                                <Form.Control type="text" className="input" placeholder='İliniz' />
                                             </Form.Group>
                                         </Col>
                                         <Col>
                                             <Form.Group className="pt-2">
-                                                <Form.Control key={ ilceler }  as="select" className="input">
-                                                    <option>İlçe Seçiniz</option>
-                                                    { ilceler }
-                                                </Form.Control>
+                                                <Form.Control type="text" className="input" placeholder='İlçeniz' />
                                             </Form.Group>
                                         </Col>
                                     </Row>

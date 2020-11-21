@@ -5,7 +5,7 @@ import Contact from "../components/Contact";
 import WhySolarEnergy from "../components/WhySolarEnergy";
 import Tarla from "../components/Tarla";
 import YaylaEvi from "../components/yaylaevi";
-
+import Anasayfailetisim from '../components/bizimleiletisimegec'
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
       <Tarla />
       <ShortDetay />
       <YaylaEvi />
+      <Anasayfailetisim />
       <WhySolarEnergy />
     </Layout>
   )
