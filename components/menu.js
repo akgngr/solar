@@ -12,10 +12,8 @@ export default function menu() {
                     <NavDropdown title="Sistemler" id="basic-nav-dropdown">
                         <NavDropdown.Item href="/gunes-enerjili-tarimsal-sulama-sistemleri">Tarla Sulaması</NavDropdown.Item>
                         <NavDropdown.Item href="/yayla-ve-bag-evi">Yayla ve Bağ Evi</NavDropdown.Item>
-                        <NavDropdown.Item href="/ciftlik">Çiftlik</NavDropdown.Item>
-                        <NavDropdown.Item href="/fabrika">Fabrika</NavDropdown.Item>
+                        <NavDropdown.Item href="/ciftlik-ve-fabrika">Çiftlik ve Fabrika</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="/oztuketim">Öz Tüketim</Nav.Link>
                     <Nav.Link href="/referanslar">Referanslar</Nav.Link>
                     <Nav.Link href="/iletisim">İletişim</Nav.Link>
                 </Nav>

@@ -140,7 +140,7 @@ form.contact {
     justify-content: center;
     align-items: flex-start;
     text-align: left;
-    height: auto;
+    height: 100%;
     background-color:#ececec93;
     width: 100%;
     padding:40px 30px;
@@ -424,7 +424,7 @@ footer{
   background-size: cover;
 }
 .iletisimegec{
-  height: 180px;
+  height: auto;
   background-color: #ff8f04;
 
   h2{
