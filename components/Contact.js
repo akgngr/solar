@@ -15,6 +15,7 @@ function Contact() {
                                 <Card.Title>Ücretsiz Keşif İçin Biz Sizi Arayalım</Card.Title>
                                 <Form className="contact" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
                                     
+                                    <div class="g-recaptcha" data-sitekey="6LdkHAUaAAAAAEQ_c9zdY0FdGlH9-5nuKDC2CiO1"></div>
                                     <input type="hidden" name="form-name" value="contact" />
 
                                     <FormGroup className="pt-2">
