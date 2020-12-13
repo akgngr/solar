@@ -11,7 +11,7 @@ const anasayfailetisim = () => {
                     </Col>
 
                     <Col lg={3}>
-                        <a href="tel:+905379271214" className='btn btn-primary btn-lg text-white'>Bizi Arayın</a>
+                        <a href="tel:+905379271214" className='btn btn-success btn-lg text-white'>Bizi Arayın</a>
                     </Col>
 
                 </Row>

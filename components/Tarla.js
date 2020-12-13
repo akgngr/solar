@@ -15,7 +15,7 @@ function Tarla() {
                         <p>
                             Güneş enerjisi ile çalışan özel pompalarımız sayesinde 300 metre derinliğe kadar su temini yapılabiliyoruz.
                         </p>
-                        <Button type='submit' className='btn-secondary'>Detaylı Bilgi Al</Button>
+                        <Button type='submit' variant="success">Detaylı Bilgi Al</Button>
                     </Col>
                 </Row>
             </Container>

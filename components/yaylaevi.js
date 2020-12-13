@@ -15,7 +15,7 @@ function Tarla() {
                         <p>
                             Güneş Panellerinden elde edilen elektriği piller sayesinde depolayıp akşamlarıda kullanabileceğinizi biliyormusunuz?
                         </p>
-                        <Button type='submit' className='btn-secondary'>Detaylı Bilgi Al</Button>
+                        <Button variant="success" type='submit'>Detaylı Bilgi Al</Button>
                     </Col>
                 </Row>
             </Container>

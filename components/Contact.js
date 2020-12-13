@@ -54,7 +54,7 @@ function Contact() {
                                         <Form.Label><a href='#'></a></Form.Label>
                                         <small><a href="#">KVKK Metnimiz</a></small>
                                     </FormGroup>
-                                    <Button variant="primary" type="submit" className="mt-3 mb-2">Gönder</Button>
+                                    <Button variant="success" type="submit" className="mt-3 mb-2 btn-first">Gönder</Button>
                                 </Form>
                             </Card.Body>
                         </Card>
