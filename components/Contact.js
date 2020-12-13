@@ -13,7 +13,7 @@ function Contact() {
                         <Card className="shadow-lg p-3 mb-5 bg-white rounded border-0">
                             <Card.Body>
                                 <Card.Title>Ücretsiz Keşif İçin Biz Sizi Arayalım</Card.Title>
-                                <Form className="contact" name="contact" method="POST" data-netlify="true">
+                                <Form className="contact" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
                                     
                                     <input type="hidden" name="form-name" value="contact" />
 
