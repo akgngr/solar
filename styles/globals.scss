@@ -121,6 +121,7 @@ form.contact {
   justify-content: flex-start;
   align-items: center;
   width: 100% !important;
+
   @include breakpoint(mobileonly){
     height: calc(100vh - 90px);
   }
@@ -197,31 +198,31 @@ form.contact {
 
 .slide1{
   background: url('/images/slider_1.png');
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 .slide2{
   background: url('/images/slider_2.png');
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 .slide3{
   background: url('/images/slider_3.png');
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 .slide4{
   background: url('/images/slider_4.png');
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 .slide5{
   background: url('/images/slider_5.png');
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }

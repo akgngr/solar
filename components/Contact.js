@@ -13,19 +13,22 @@ function Contact() {
                         <Card className="shadow-lg p-3 mb-5 bg-white rounded border-0">
                             <Card.Body>
                                 <Card.Title>Ücretsiz Keşif İçin Biz Sizi Arayalım</Card.Title>
-                                <Form className="contact">
+                                <Form className="contact" name="contact" method="POST" data-netlify="true">
+                                    
+                                    <input type="hidden" name="form-name" value="contact" />
+
                                     <FormGroup className="pt-2">
-                                        <Form.Control type="text" placeholder="Adınız Soyadınız" className="input" />
+                                        <Form.Control name="name" type="text" placeholder="Adınız Soyadınız" className="input" />
                                     </FormGroup>
                                     <Row>
                                         <Col>
                                             <Form.Group className="pt-2">
-                                                <Form.Control type="text" placeholder="Telefon Numaranız" className="input" />
+                                                <Form.Control name="phone" type="text" placeholder="Telefon Numaranız" className="input" />
                                             </Form.Group>
                                         </Col>
                                         <Col>
                                             <Form.Group className="pt-2">
-                                                <Form.Control as="select" className="input">
+                                                <Form.Control name="kredi" as="select" className="input">
                                                     <option>Kredi kullanılacak mı?</option>
                                                     <option>Evet</option>
                                                     <option>Hayır</option>
@@ -36,21 +39,21 @@ function Contact() {
                                     <Row className="pt-2">
                                         <Col>
                                             <Form.Group className="pt-2">
-                                                <Form.Control type="text" className="input" placeholder='İliniz' />
+                                                <Form.Control name="il" type="text" className="input" placeholder='İliniz' />
                                             </Form.Group>
                                         </Col>
                                         <Col>
                                             <Form.Group className="pt-2">
-                                                <Form.Control type="text" className="input" placeholder='İlçeniz' />
+                                                <Form.Control name="ilce" type="text" className="input" placeholder='İlçeniz' />
                                             </Form.Group>
                                         </Col>
                                     </Row>
-
-                                    <FormGroup className="pt-2">
-                                        <Form.Text placeholder="Mesajınız" className="input" />
-                                    </FormGroup>
+                                    <Form.Group className="pt-2" controlId="contactform.message">
+                                        <Form.Label>Mesajınız</Form.Label>
+                                        <Form.Control name="message" as="textarea" rows={3} />
+                                    </Form.Group>
                                     <FormGroup className="form-check pt-2">
-                                        <Form.Check type="checkbox" id="check" label="KVKK bilgilendirmesini okudum ve anladım."/>
+                                        <Form.Check name="kvkk" type="checkbox" id="check" label="KVKK bilgilendirmesini okudum ve anladım."/>
                                         <Form.Label><a href='#'></a></Form.Label>
                                         <small><a href="#">KVKK Metnimiz</a></small>
                                     </FormGroup>
