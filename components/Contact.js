@@ -58,7 +58,7 @@ function Contact() {
                                         <small><a href="#">KVKK Metnimiz</a></small>
                                     </FormGroup>
                                     <div data-netlify-recaptcha="true"></div>
-                                    <div class="g-recaptcha" data-sitekey="6LdkHAUaAAAAAEQ_c9zdY0FdGlH9-5nuKDC2CiO1"></div>
+                                    <div class="g-recaptcha" data-sitekey="6LewcgYaAAAAAAT6XZ2pChbohjnV36L-cTfObfea"></div>
                                     <Button variant="success" type="submit" className="mt-3 mb-2 btn-first">Gönder</Button>
                                 </Form>
                             </Card.Body>
