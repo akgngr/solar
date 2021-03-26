@@ -7,6 +7,11 @@ import Ongridsystem from '../components/ongridsystem'
 const ciftlik = () => {
     return (
         <Layout>
+            <Seo 
+                title = "Çiftlik ve Fabrika | Derviş Solar"
+                description = "Günümüzde, ticari işletmelerin karşılaştığı en büyük maliyetlerinden biri de enerji/elektrik maliyeti olmaktadır."
+                metakey = "güneş enerjisi, ücretsiz elektrik, güneş enerji ile tarla sulama, güneş panelleri"
+            />
             <Head />
             <Container className='pt-6 pb-6'>
             <h1>Tavuk ve Besi Çiftliği, Fabrikalar için Solar Sistem Çözümlerimiz</h1>

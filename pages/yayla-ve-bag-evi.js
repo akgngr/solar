@@ -1,13 +1,17 @@
 import { Container } from 'react-bootstrap'
 import Layout from '../components/layout'
-import Head from '../components/head'
+import Seo from '../components/seo'
 import Ofgridsystem from '../components/ofgridsystem'
 import Ongridsystem from '../components/ongridsystem'
 
 const yayla = () => {
     return(
         <Layout>
-            <Head />
+            <Seo 
+                title = "Yayla ve Bağ Evi Solar Sistem Çözümlerimiz | Derviş Solar"
+                description = "Özellikle yaz aylarında çokça rağbet gören yayla evlerinde ağırlıklı olarak Off Grid yani Akülü Güneş enerjisi elektrik üretim sistemi kuruyoruz."
+                metakey = "güneş enerjisi, ücretsiz elektrik, güneş enerji ile tarla sulama, güneş panelleri"
+            />
             <Container className='pt-6 pb-6'>
                 <h1>Yayla ve Bağ Evi Solar Sistem Çözümlerimiz</h1>
                 <p>

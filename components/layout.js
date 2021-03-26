@@ -6,7 +6,7 @@ import Footer from './Footer'
 
 export default function Layout({
        children,
-       title = 'This is the default title',
+       title = 'Derviş Solar',
    }) {
     return (
         <div>

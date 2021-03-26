@@ -1,11 +1,15 @@
 import Layout from '../components/layout'
 import {Col, Container, Row} from "react-bootstrap";
-import Head from '../components/head'
+import Seo from '../components/seo'
 
 export default function Hakkimizda(){
     return(
         <Layout>
-            <Head />
+            <Seo 
+                title = "Hakkımızda | Derviş Solar"
+                description = "Derviş Solar Sistemleri, Hatay’ın Hassa İlçesine Bağlı Aktepe Mahallesinde kurulmuştur."
+                metakey = "güneş enerjisi, ücretsiz elektrik, güneş enerji ile tarla sulama, güneş panelleri"
+            />
             <Container className="pt-5 pb-5">
                 <Row>
                     <Col lg={8} className="offset-lg-2">

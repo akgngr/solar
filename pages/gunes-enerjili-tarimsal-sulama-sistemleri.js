@@ -2,12 +2,16 @@ import { Container } from 'react-bootstrap'
 import Layout from '../components/layout'
 import Ofgridsystem from '../components/ofgridsystem'
 import Ongridsystem from '../components/ongridsystem'
-import Head from '../components/head'
+import Seo from '../components/seo'
 
 const tarlasulama = () => {
     return(
         <Layout>
-            <Head /> 
+            <Seo 
+                title = "Güneş Enerjili Tarımsal Sulama Sistemleri | Derviş Solar"
+                description = "Güneş enerjili sulama sistemleri, solar pompa sistemleri, güneş enerjisinden faydalanılarak elektrik motorlu pompaların çalıştırılmasını sağlayan sistemlerdir."
+                metakey = "güneş enerjisi, ücretsiz elektrik, güneş enerji ile tarla sulama, güneş panelleri"
+            />
             <Container className='pt-6 pb-6'>
                 <h1>Güneş Enerjili Tarımsal Sulama Sistemleri</h1>
                 <p>

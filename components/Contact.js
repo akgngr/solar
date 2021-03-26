@@ -5,7 +5,6 @@ import Tel from "./svg/tel";
 import Email from './svg/email';
 import React from "react";
 import axios from "axios";
-
 export default class Contact extends React.Component {
     
     constructor(props){
@@ -55,7 +54,7 @@ export default class Contact extends React.Component {
           message : event.target.value
         })
       }
-      
+
       handlesubmit = async (event)=> {
         event.preventDefault()
         const data = this.state
