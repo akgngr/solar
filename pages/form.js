@@ -1,53 +1,56 @@
-// Customize this 'myform.js' script and add it to your JS bundle.
-// Then import it with 'import MyForm from "./myform.js"'.
-// Finally, add a <MyForm/> element whereever you wish to display the form.
-
 import React from "react";
+import axios from "axios";
 
 export default class MyForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.submitForm = this.submitForm.bind(this);
+
+  constructor(props){
+    super(props)
     this.state = {
-      status: ""
-    };
+      email: "",
+      message: ""
+
+    }
+  }
+
+  
+  handleEmailChange = (event) => {
+    this.setState({
+      email : event.target.value
+    })
+  }
+
+  handleMessageChange = (event) => {
+    this.setState({
+      message : event.target.value
+    })
   }
 
   render() {
-    const { status } = this.state;
+   const {email, message} = this.state
     return (
       <form
-        onSubmit={this.submitForm}
-        action="https://formspree.io/f/xwkwnkvq"
+        onSubmit={this.handlesubmit}
         method="POST"
       >
-        
         <label>Email:</label>
-        <input type="email" name="email" />
+        <input type="email" name="email" onChange={this.handleEmailChange} />
         <label>Message:</label>
-        <input type="text" name="message" />
-        {status === "SUCCESS" ? <p>Thanks!</p> : <button>Submit</button>}
-        {status === "ERROR" && <p>Ooops! There was an error.</p>}
+        <input type="text" name="message" onChange={this.handleMessageChange} />
+        <button>Submit</button>
       </form>
     );
   }
 
-  submitForm(ev) {
-    ev.preventDefault();
-    const form = ev.target;
-    const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        form.reset();
-        this.setState({ status: "SUCCESS" });
-      } else {
-        this.setState({ status: "ERROR" });
-      }
-    };
-    xhr.send(data);
+  handlesubmit = async (event)=> {
+    event.preventDefault()
+    const data = this.state
+    await axios.post('https://v1.nocodeapi.com/akgngr/telegram/oGrVAoKrOFfcDwsd', data)
+    .then(function(response){
+      alert('Mesajınız başarılı bir şekilde gönderildi. Bizimle iletişime geçtiiniz için teşekkür ederiz')
+    })
+    .catch(function(error){
+      alert('Hata: ' + error)
+    })
   }
+
 }
