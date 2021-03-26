@@ -122,7 +122,7 @@ export default class Contact extends React.Component {
                                         <small><a href="#">KVKK Metnimiz</a></small>
                                     </FormGroup>
                                     <div data-netlify-recaptcha="true"></div>
-                                    <div class="g-recaptcha" data-sitekey="6Ld-S48aAAAAABiQImCm8GVOs4JSGSO6pp2Q7Pyi"></div>
+                                    <div className="g-recaptcha" data-sitekey="6Ld-S48aAAAAABiQImCm8GVOs4JSGSO6pp2Q7Pyi"></div>
                                     <Button variant="success" type="submit" className="mt-3 mb-2 btn-first">Gönder</Button>
                                 </Form>
                             </Card.Body>

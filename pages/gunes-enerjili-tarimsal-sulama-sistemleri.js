@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Ofgridsystem from '../components/ofgridsystem'
 import Ongridsystem from '../components/ongridsystem'
 import Seo from '../components/seo'
+import Head from '../components/head'
 
 const tarlasulama = () => {
     return(
@@ -12,6 +13,7 @@ const tarlasulama = () => {
                 description = "Güneş enerjili sulama sistemleri, solar pompa sistemleri, güneş enerjisinden faydalanılarak elektrik motorlu pompaların çalıştırılmasını sağlayan sistemlerdir."
                 metakey = "güneş enerjisi, ücretsiz elektrik, güneş enerji ile tarla sulama, güneş panelleri"
             />
+            <Head />
             <Container className='pt-6 pb-6'>
                 <h1>Güneş Enerjili Tarımsal Sulama Sistemleri</h1>
                 <p>

@@ -1,6 +1,7 @@
 import Layout from '../components/layout'
 import {Col, Container, Row} from "react-bootstrap";
 import Seo from '../components/seo'
+import Head from '../components/head'
 
 export default function Hakkimizda(){
     return(
@@ -10,6 +11,7 @@ export default function Hakkimizda(){
                 description = "Derviş Solar Sistemleri, Hatay’ın Hassa İlçesine Bağlı Aktepe Mahallesinde kurulmuştur."
                 metakey = "güneş enerjisi, ücretsiz elektrik, güneş enerji ile tarla sulama, güneş panelleri"
             />
+            <Head />
             <Container className="pt-5 pb-5">
                 <Row>
                     <Col lg={8} className="offset-lg-2">

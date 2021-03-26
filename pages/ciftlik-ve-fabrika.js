@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 import Ofgridsystem from '../components/ofgridsystem'
 import Ongridsystem from '../components/ongridsystem'
+import Head from '../components/head'
 
 const ciftlik = () => {
     return (
@@ -12,6 +13,7 @@ const ciftlik = () => {
                 description = "Günümüzde, ticari işletmelerin karşılaştığı en büyük maliyetlerinden biri de enerji/elektrik maliyeti olmaktadır."
                 metakey = "güneş enerjisi, ücretsiz elektrik, güneş enerji ile tarla sulama, güneş panelleri"
             />
+            <Head />
             <Container className='pt-6 pb-6'>
             <h1>Tavuk ve Besi Çiftliği, Fabrikalar için Solar Sistem Çözümlerimiz</h1>
             <p>
