@@ -5,8 +5,10 @@ import Tel from "./svg/tel";
 import Email from './svg/email';
 import React from "react";
 import axios from "axios";
+import Router from 'next/router'
+
 export default class Contact extends React.Component {
-    
+
     constructor(props){
         super(props)
         this.state = {
@@ -18,7 +20,7 @@ export default class Contact extends React.Component {
           message: ""
         }
       }
-    
+
       handleNameChange = (event) => {
         this.setState({
           name : event.target.value
@@ -48,7 +50,7 @@ export default class Contact extends React.Component {
           phone : event.target.value
         })
       }
-    
+
       handleMessageChange = (event) => {
         this.setState({
           message : event.target.value
@@ -60,7 +62,8 @@ export default class Contact extends React.Component {
         const data = this.state
         await axios.post('https://v1.nocodeapi.com/akgngr/telegram/oGrVAoKrOFfcDwsd', data)
         .then(function(response){
-          alert('Mesajınız başarılı bir şekilde gönderildi. Bizimle iletişime geçtiiniz için teşekkür ederiz')
+          alert('Mesajınız başarılı bir şekilde gönderildi. Bizimle iletişime geçtiiniz için teşekkür ederiz. Anasayfaya yönlendiriliyorsunuz..')
+          Router.push('/')
         })
         .catch(function(error){
           alert('Hata: ' + error)
@@ -78,7 +81,7 @@ export default class Contact extends React.Component {
                             <Card.Body>
                                 <Card.Title>Ücretsiz Keşif İçin Biz Sizi Arayalım</Card.Title>
                                 <Form className="contact" method="POST" onSubmit={this.handlesubmit}>
-                                    
+
                                     <input type="hidden" name="form-name" value="contact" />
 
                                     <FormGroup className="pt-2">
@@ -122,7 +125,7 @@ export default class Contact extends React.Component {
                                         <small><a href="#">KVKK Metnimiz</a></small>
                                     </FormGroup>
                                     <div data-netlify-recaptcha="true"></div>
-                                    <div className="g-recaptcha" data-sitekey="6Ld-S48aAAAAABiQImCm8GVOs4JSGSO6pp2Q7Pyi"></div>
+                                    <div className="g-recaptcha" data-sitekey="6LcaApkaAAAAAFpP063d_V7S3yrxWkJs_oSpwVC1"></div>
                                     <Button variant="success" type="submit" className="mt-3 mb-2 btn-first">Gönder</Button>
                                 </Form>
                             </Card.Body>
@@ -134,10 +137,6 @@ export default class Contact extends React.Component {
                         <p className="pt-4">
                             <Phoneempty />
                             <span className="pl-2"><a href="tel:+905379271214">+905379271214</a></span>
-                        </p>
-                        <p className="pt-4">
-                            <Tel/>
-                            <span className="pl-2"> <a href="tel:+903267835484">+903267835484</a> </span>
                         </p>
                         <p className="pt-4">
                             <Email />
